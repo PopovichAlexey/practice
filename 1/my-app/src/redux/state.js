@@ -45,8 +45,6 @@ export const addPost = () => {
   //эта штука задвигает новый пост в массив
   state.posts.push(newPost);
 
-  state.newPostText = '';
-
   //эта штука должна перегружать страницу с новыми данными
   reLoAd(state);
 }

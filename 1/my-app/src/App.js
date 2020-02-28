@@ -20,6 +20,7 @@ const App = (props) => {
                 addPost={props.addPost}
                 posts={props.state.posts}
                 updateNewPostText={props.updateNewPostText}
+                newPostText={props.state.newPostText}
             />
         </div>
         <div className='footer'><Footer/></div>

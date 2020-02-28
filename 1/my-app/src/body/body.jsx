@@ -16,11 +16,11 @@ const Body = (props) => {
   return (
     <div className={s.Act}>
       <Route path = '/Homepage' component = { Homepage } activeClassName = { s.active } />
-      <Route path = '/Posts' render =
-        { () => < Posts
+      <Route path = '/Posts' render = { () => < Posts
             addPost = { props.addPost }
             posts = { props.posts }
             updateNewPostText = {props.updateNewPostText}
+            newPostText={props.newPostText}
         /> }
       />
       <Route path = '/Aboutme' component = { Aboutme } />

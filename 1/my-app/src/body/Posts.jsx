@@ -10,6 +10,7 @@ const Posts = (props) => {
 
   let addPoster = () => {
       props.addPost();
+      props.updateNewPostText('');
   }
 
   let onTextChange = () => {
@@ -23,7 +24,7 @@ const Posts = (props) => {
         Posts.
       </div>
       <div>
-        <textarea ref={plot} onChange={ onTextChange }></textarea>
+        <textarea ref={plot} onChange={ onTextChange } value={props.newPostText}></textarea>
       </div>
       <div>
         <button onClick = { addPoster } > Add post </button>
